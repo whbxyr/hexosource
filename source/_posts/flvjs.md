@@ -13,11 +13,13 @@ tags: [JavaScript, 插件]
 + RTP: 基于UDP，延迟1秒，浏览器不支持。
 
 &emsp;&emsp;常见直播协议延迟与性能数据（只做对比参考）如下：
+
 | 传输协议      |     播放器 |   延迟   |    内存   |   CPU   |
 | :-------- | --------:| :------: | :------:  |  :------: |
 | RTMP    |   Flash |  1s  |  430M | 11% |
 | HTTP-FLV  | Video | 1s  | 310M | 4.4% |
 | HLS | Video | 20s | 205M | 3% |
+
 在支持浏览器的协议里，延迟排序是：
 &emsp;&emsp;RTMP = HTTP-FLV = WebSocket-FLV < HLS
 而性能排序则恰好相反：
@@ -58,11 +60,13 @@ tags: [JavaScript, 插件]
 ## 使用实例
 &emsp;&emsp;使用`flv.js`的一个具体例子可以点击  [这里](http://alonesuperman.com/show/flv/demo/) !
 &emsp;&emsp;在 Google Chrome	59.0.3071.115 (正式版本) （32 位）中的效果图如下：
+
 ![chrome 下的效果图](flvjs/1.png)
 
 &emsp;&emsp;而在 Android 6.0.1 的小米4手机的浏览器上是无法使用的。如下图：
+
 ![Android 6.0.1 小米4下浏览器的效果图](flvjs/2.png)
 
 &emsp;&emsp;另外，其在 iOS 上的 Safari 浏览器下也是无法使用的。
 
-综上，`flv.js`在移动端上的使用还是比较局限的。
+#### 综上，`flv.js`在移动端上的使用还是比较局限的。
