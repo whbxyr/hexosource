@@ -26,5 +26,20 @@ tags: [html]
 2. 在构建 html 的时候，提前想好某块内容的结构语义，判断它是一个标题还是段落或者一篇文章等等。
 3. 在实际敲 html 代码的时候，根据具体语义选择对应的标签就可以了。
 
+## 有哪些语义化的标签
+&emsp;&emsp;举一些 HTML 5 的新的语义化标签：
++ `<header>`
++ `<footer>`
++ `<hgroup>`
++ `<nav>`
++ `<aside>`
++ `<section>`
++ `<article>`
++ ......
+
 &emsp;&emsp;下面图片展示的是一个语义化 html 的例子。
 ![语义化的 html](semantic/1.png)
+
+## 参考资料
+[HTML 5的革新——语义化标签(一)](http://www.html5jscss.com/html5-semantics-section.html)
+[什么是语义化的HTML?有何意义？为什么要做到语义化？](http://www.cnblogs.com/wuqiutong/p/5986220.html)
