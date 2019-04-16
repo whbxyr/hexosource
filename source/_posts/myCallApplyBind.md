@@ -35,3 +35,20 @@ Function.prototype.myBind = function (context) {
   }
 }
 ```
+&emsp;&emsp;调用 bind 之后获得的绑定函数，如果将其当成构造函数和 new 搭配使用，那么原本调用 bind 时传入的第一个参数 context 将降低优先级，取而代之的是 new 操作符创建的那个新对象。而以上的实现过于简单，实现不了这个功能，以下是升级之后的版本。
+```javascript
+Function.prototype.myBind = function (context) {
+  let that = this
+  let args = [...arguments].slice(1)
+  let fNOP = function() {}
+  let fBound = function () {
+    // 调用了前面手写的 apply
+    return that.myApply(this instanceof fBound ? this : context, args.concat([...arguments]))
+  }
+  if (that.prototype) {
+    fNOP.prototype = that.prototype
+  }
+  fBound.prototype = new fNOP()
+  return fBound
+}
+```
