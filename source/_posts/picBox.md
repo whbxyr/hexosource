@@ -50,8 +50,8 @@ export const picBox = (x1, y1, x2, y2) => {
     }
   }
   return {
-    x3,
-    y3
+    width: x3,
+    height: y3
   }
 }
 ```
