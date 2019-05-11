@@ -58,6 +58,6 @@ export const picBox = (x1, y1, x2, y2) => {
 &emsp;&emsp;现在假如图片盒子的最大宽度限制是 400，最大高度限制是 300，一张图片的尺寸是 500 * 600，那么放入盒子中的自适应图片尺寸分别是
 ```javascript
 const newSize = picBox(400, 300, 500, 600)
-newSize.x3 // 自适应后的宽度
-newSize.y3 // 自适应后的高度
+newSize.width // 250，自适应后的宽度
+newSize.height // 300，自适应后的高度
 ```
