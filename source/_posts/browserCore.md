@@ -24,7 +24,7 @@ tags: [浏览器]
 
 三. **Chromium**/**Blink** -> (Chrome浏览器)
 
-&emsp;&emsp;**Chromium**是谷歌公司的Chrome浏览器使用的渲染引擎，它是以苹果公司的WebKit作为原型的，是WebKit的一个分支。Chromium引擎把WebKit引擎的代码梳理得更加可读。后来，在2013年的时候，Chrome放弃了Chromium引擎转而使用了基于**WebKit2**的**Blink**引擎，其中**WebKit2**是苹果公司于2010年推出的新的WebKit引擎。
+&emsp;&emsp;**Chromium**是谷歌公司的一个开源浏览器项目，每隔一段时间，谷歌会在最新的比较稳定的Chromium版本上加入一些其他的功能使之成为新版本的Chrome浏览器。而Chromium的渲染引擎采用的是**Blink**，其前身是**Webkit**。**Blink**是从早期的**Webkit**项目（而非后来的**Webkit2**）复制出来另外维护的一个新的项目。
 
 四. **Presto** -> (Opera浏览器)
 
